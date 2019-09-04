@@ -53,7 +53,7 @@ Tendremos como salida la imagen etiquetada en base a la prediccion de la red neu
 
 ![prediccion](predicciones-pruebas/prediccion2.PNG)   
 
-##Extras: Recolectar imagenes
+## Extras: Recolectar imagenes
 Para recolectar imagenes para el dataset se lo hizo con la libreria de [google-images-download](https://github.com/hardikvasa/google-images-download)
 En donde los argumentos de configuracion se pueden hacer bien desde un archivo .json o desde el
 script mismo:
