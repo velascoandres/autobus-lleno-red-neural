@@ -32,11 +32,11 @@ print("[INFO] loading network...")
 model = load_model(args["model"])
 
 # classify the input image
-(notLleno, lleno) = model.predict(image)[0]
-print(notLleno, lleno)
+(vacio, lleno) = model.predict(image)[0]
+print(vacio, lleno)
 # build the label
-label = "Bus lleno" if lleno > notLleno else "Bus vacio"
-proba = lleno if lleno > notLleno else notLleno
+label = "Bus lleno" if lleno > vacio else "Bus vacio"
+proba = lleno if lleno > vacio else vacio
 label = "{}: {:.2f}%".format(label, proba * 100)
 
 # draw the label on the image

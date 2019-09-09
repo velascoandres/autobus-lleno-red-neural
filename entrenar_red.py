@@ -32,6 +32,7 @@ def mezclar_orden_imagenes(directorioDataset):
     listaRutaImagenesOrdenada = sorted(listaRutaImagenes)
     random.seed(42)
     random.shuffle(listaRutaImagenesOrdenada)
+    print(len(listaRutaImagenesOrdenada))
     return listaRutaImagenesOrdenada
 
 
@@ -56,8 +57,8 @@ def preparar_entremaiento(listaRutaImagenes, dimensionImagen, etiquetaReferencia
     return datos_entremamiento, lista_etiquetas
 
 
-ITERACIONES = 50  # numero de iteraciones
-TASA_APRENDIZAJE = 1e-3  # Tasa de aprendizaje
+ITERACIONES = 50  # 50 numero de iteraciones
+TASA_APRENDIZAJE = 1e-3 # 1e-3  # Tasa de aprendizaje
 BATCH_SIZE = 32  # Batch size
 
 lista_rutas_imagenes_entremamiento = mezclar_orden_imagenes(args["dataset"])
